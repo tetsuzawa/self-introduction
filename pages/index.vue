@@ -5,7 +5,7 @@
     <about/>
     <skills/>
     <experiences/>
-    <posts/>
+    <posts :postlist="postlist"/>
 
   </section>
 </template>
@@ -25,6 +25,20 @@
             Skills,
             Experiences,
             Posts
+        },
+        // data() {
+        //     return {
+        //         postlist: {}
+        //     }
+        // },
+
+        async asyncData({$axios}) {
+            const baseUrl = 'https://qiita.com/api/v2/users/tetsuzawa/items';
+            const getUrl = encodeURI(baseUrl);
+            const response = await $axios.$get(getUrl);
+            return {
+                postlist: response,
+            }
         }
     }
 </script>
