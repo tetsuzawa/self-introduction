@@ -1,5 +1,4 @@
 <template>
-  <!--    <footer class="footer">-->
   <footer class="hero is-small is-white has-border-top-gray-light" id="footer">
     <span class="footer-separator"></span>
     <div class="hero-head">
@@ -88,11 +87,9 @@
                    target="_blank" rel="noopener noreferrer">
                   <div class="columns is-mobile">
                     <div class="column">
-                      <!--                                            <span class="icon">-->
-                      <!--                                                <i class="fab fa-twitter"></i>-->
-                      <!--                                            </span>-->
-                              <b-icon icon="twitter">
-                              </b-icon>
+                      <span class="icon">
+                        <i class="fab fa-twitter fa-lg"></i>
+                      </span>
                     </div>
                     <div class="column">
                       Twitter
@@ -103,11 +100,9 @@
                    rel="noopener noreferrer">
                   <div class="columns is-mobile">
                     <div class="column">
-<!--                                            <span class="icon">-->
-<!--                                                <i class="fab fa-github"></i>-->
-<!--                                            </span>-->
-                      <b-icon icon="github-circle">
-                      </b-icon>
+                      <span class="icon">
+                        <i class="fab fa-github-alt fa-lg"></i>
+                      </span>
                     </div>
                     <div class="column">
                       GitHub
@@ -118,10 +113,9 @@
                    target="_blank" rel="noopener noreferrer">
                   <div class="columns is-mobile">
                     <div class="column">
-<!--                                            <span class="icon">-->
-<!--                                                <i class="fab fa-linkedin-in"></i>-->
-<!--                                            </span>-->
-                      <b-icon icon="linkedin-box"></b-icon>
+                       <span class="icon">
+                         <i class="fab fa-linkedin-in fa-lg"></i>
+                       </span>
                     </div>
                     <div class="column">
                       LinkedIn
@@ -149,16 +143,15 @@
               </div>
               <div class="level-right">
                 <div class="content made-in-europe">
-                            <span>
-                                    made with
-                                </span>
-<!--                  <span class="icon" style="color: #ff0000;">-->
-<!--                                    <i class="fas fa-heart"></i>-->
-<!--                  </span>-->
-                  <b-icon icon="cards-heart" style="color: red;"></b-icon>
                   <span>
-                                     By me
-                                    </span>
+                    made with
+                  </span>
+                  <span class="icon" style="color: #ff0000;">
+                    <i class="fas fa-heart"></i>
+                  </span>
+                  <span>
+                    By me
+                  </span>
                   &nbsp;
                   <span class="icon is-medium" v-twemoji></span>
                 </div>
@@ -170,13 +163,11 @@
     </div>
 
 
-    <!--
     <div class="container">
       <div class="content has-text-centered">
         2019 ©TetsuTakizawa
       </div>
     </div>
-    -->
   </footer>
 </template>
 
