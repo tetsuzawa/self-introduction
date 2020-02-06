@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <div class="columns has-reverse-row-order-mobile is-centered is-vcentered">
-      <div class="column content is-medium is-centered">
-        <h3 class="has-text-shadow is-centered">{{ $t('home.experiences.title') }}</h3>
+    <div class="columns has-reverse-row-order-mobile is-centered">
+      <div class="column content is-medium">
+        <h3 class="has-text-shadow has-text-centered">{{ $t('home.experiences.title') }}</h3>
 
         <div class="timeline is-centered is-vcentered">
           <!--          <header class="timeline-header">-->
