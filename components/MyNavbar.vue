@@ -51,13 +51,19 @@
       <div class="navbar-end">
 
         <a href="https://github.com/tetsuzawa" class="navbar-item">
-          <b-icon icon="github-box" size="is-medium"></b-icon>
+          <span class="icon">
+            <i class="fab fa-github-square fa-2x"></i>
+          </span>
         </a>
         <a href="https://twitter.com/tetsuzawa_el" class="navbar-item">
-          <b-icon icon="twitter-box" size="is-medium"></b-icon>
+          <span class="icon">
+            <i class="fab fa-twitter-square fa-2x"></i>
+          </span>
         </a>
         <a href="https://www.linkedin.com/in/tetsu-takizawa" class="navbar-item">
-          <b-icon icon="linkedin-box" size="is-medium"></b-icon>
+          <span class="icon">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </span>
         </a>
 
 
