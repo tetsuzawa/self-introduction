@@ -56,7 +56,7 @@
         // }
         asyncData({$axios}) {
             const baseUrl = 'https://qiita.com/api/v2/users/tetsuzawa/items';
-           $axios.$get(baseUrl)
+            $axios.$get(baseUrl)
                 .then(response => {
                     this.results = response
                 })

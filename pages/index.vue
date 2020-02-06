@@ -11,6 +11,7 @@
 </template>
 
 <script>
+    import ProfileHero from "../components/profile-hero/ProfileHero";
     import About from "../components/about/About";
     import Skills from "../components/skills/Skills";
     import Experiences from "../components/experiences/Experiences";
@@ -18,7 +19,6 @@
 
     export default {
         name: 'HomePage',
-
         components: {
             ProfileHero,
             About,
