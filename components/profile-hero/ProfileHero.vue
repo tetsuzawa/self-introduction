@@ -14,27 +14,27 @@
             <div class="columns is-centered is-mobile">
               <div class="column" style="max-width: 450px">
 
-<!--                <vue-typed-js-->
-<!--                  :key="locale"-->
-<!--                  :strings="helloSubjects"-->
-<!--                  :loop="true"-->
-<!--                  :typeSpeed="9"-->
-<!--                  :backSpeed="9"-->
-<!--                  :backDelay="2000"-->
-<!--                >-->
-                  <h1 class="is-size-3-mobile is-size-1 has-text-weight-bold"
-                      v-html="$t('home.profile_hero.name')">
-                  </h1>
-<!--                </vue-typed-js>-->
+                <!--                <vue-typed-js-->
+                <!--                  :key="locale"-->
+                <!--                  :strings="helloSubjects"-->
+                <!--                  :loop="true"-->
+                <!--                  :typeSpeed="9"-->
+                <!--                  :backSpeed="9"-->
+                <!--                  :backDelay="2000"-->
+                <!--                >-->
+                <h1 class="is-size-3-mobile is-size-1 has-text-weight-bold"
+                    v-html="$t('home.profile_hero.name')">
+                </h1>
+                <!--                </vue-typed-js>-->
 
                 <p class="is-size-4 padding-top-1x"
                    v-html="$t('home.profile_hero.biography')">
                 </p>
                 <div class="has-padding-2x">
                   <button class="button is-rainbow is-rounded" v-scroll-to="'#beta-signup'">
-                                        <span class="icon">
-                                          <b-icon icon="account-card-details" size="is-small"></b-icon>
-                                        </span>
+                    <span class="icon">
+                       <i class="far fa-address-card fa-lg"></i>
+                    </span>
                     <span>{{ $t('home.home.contact_me') }}</span>
                   </button>
                 </div>
