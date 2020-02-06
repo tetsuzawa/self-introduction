@@ -153,6 +153,9 @@
         "title": "Internship at Ishida (Development)",
         "contents": "I evaluated the electrical reliability of the device under development. And I developed embedded software for sorting and display tags to improve the productivity of existing distribution systems."
       }
+    },
+    "posts": {
+      "title": "Posts"
     }
   }
 }
