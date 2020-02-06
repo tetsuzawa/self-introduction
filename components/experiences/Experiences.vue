@@ -8,9 +8,8 @@
           <!--          <header class="timeline-header">-->
           <!--            <span class="tag is-medium is-light">Start</span>-->
           <!--          </header>-->
-          <header class="timeline-header is-icon">
-            <!--            <span class="tag is-medium is-light">Start</span>-->
-            <b-icon icon="map-marker" size="is-large" type="is-danger"></b-icon>
+          <header class="timeline-header icon is-large has-text-danger">
+              <i class="fas fa-map-marker-alt fa-2x"></i>
           </header>
           <div class="timeline-item">
             <div class="timeline-marker"></div>
