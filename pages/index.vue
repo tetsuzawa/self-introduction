@@ -11,7 +11,6 @@
 </template>
 
 <script>
-    import ProfileCard from "../components/ProfileCard";
     import About from "../components/about/About";
     import Skills from "../components/skills/Skills";
     import Experiences from "../components/experiences/Experiences";
@@ -21,12 +20,6 @@
         name: 'HomePage',
 
         components: {
-            Personal,
-            ProfileCard,
-            Card,
-            SplashHero,
-            Privacy,
-
             ProfileHero,
             About,
             Skills,
