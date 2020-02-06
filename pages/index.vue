@@ -26,12 +26,8 @@
             Experiences,
             Posts
         },
-        // data() {
-        //     return {
-        //         postlist: {}
-        //     }
-        // },
 
+        // props for posts
         async asyncData({$axios}) {
             const baseUrl = 'https://qiita.com/api/v2/users/tetsuzawa/items';
             const getUrl = encodeURI(baseUrl);
