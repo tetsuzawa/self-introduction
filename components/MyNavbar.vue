@@ -1,14 +1,11 @@
 <template>
-  <nav
-    class="navbar has-shadow has-border-bottom-gray-light animated fadeInDown"
-    role="navigation"
-    aria-label="main navigation"
+  <nav class="navbar has-shadow has-border-bottom-gray-light animated fadeInDown"
+       role="navigation"
+       aria-label="main navigation"
   >
     <div class="navbar-brand">
-      <nuxt-link to="/" class="navbar-item is-size-4 has-text-primary">
-        <a href="/" class="header-logo"></a>
-        <span class="header-logo-separator"></span>
-      </nuxt-link>
+      <a href="/" class="navbar-item is-size-4 has-text-primary header-logo"></a>
+      <span class="header-logo-separator"></span>
 
       <a
         role="button"
@@ -25,9 +22,9 @@
 
     <div id="navbarBasic" class="navbar-menu">
       <div class="navbar-start">
-        <nuxt-link class="navbar-item" to="/">
+        <a class="navbar-item" v-scroll-to="'#main'">
           Home
-        </nuxt-link>
+        </a>
 
         <a class="navbar-item" v-scroll-to="'#contact'">
           Contact
@@ -40,12 +37,12 @@
         </a>
 
         <div class="navbar-dropdown">
-          <nuxt-link
+          <a
             v-for="locale in availableLocales"
+            :href="switchLocalePath(locale.code)"
             :key="locale.code"
-            :to="switchLocalePath(locale.code)"
             class="navbar-item">{{ locale.name }}
-          </nuxt-link>
+          </a>
         </div>
       </div>
     </div>
@@ -55,11 +52,6 @@
 <script>
     export default {
         name: "MyNavbar",
-        data() {
-            return {
-                // currentLocale: this.$i18n.locale
-            }
-        },
         computed: {
             currentLocale() {
                 return this.$i18n.locales.filter(i => i.code === this.$i18n.locale)[0]
@@ -78,8 +70,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 120px;
-    height: 45px;
+    width: 80px;
+    height: 80px;
   }
 
   .header-logo-separator {

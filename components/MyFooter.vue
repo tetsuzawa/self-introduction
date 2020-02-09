@@ -190,11 +190,11 @@
 
   .footer-logo {
     background-image: url('~assets/images/logo.png');
-    background-size: 40px 40px;
+    background-size: 70px 70px;
     background-repeat: no-repeat;
     background-position: center center;
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
   }
 
   .footer-logo-separator {
