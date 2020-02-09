@@ -4,7 +4,7 @@
        aria-label="main navigation"
   >
     <div class="navbar-brand">
-      <a href="/" class="navbar-item is-size-4 has-text-primary header-logo"></a>
+      <a href="/" class="navbar-item is-size-4 header-logo"></a>
       <span class="header-logo-separator"></span>
 
       <a
@@ -12,7 +12,9 @@
         class="navbar-burger burger"
         aria-label="menu"
         aria-expanded="false"
-        data-target="navbarBasic"
+        data-target="'#navbarBasic'"
+        :class="{ 'is-active': menuActive }"
+        @click="menuToggle"
       >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -52,6 +54,16 @@
 <script>
     export default {
         name: "MyNavbar",
+        data() {
+            return {
+                menuActive: false,
+            }
+        },
+        methods: {
+            menuToggle() {
+                this.menuActive = !this.menuActive;
+            },
+        },
         computed: {
             currentLocale() {
                 return this.$i18n.locales.filter(i => i.code === this.$i18n.locale)[0]
