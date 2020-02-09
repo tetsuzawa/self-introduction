@@ -29,28 +29,10 @@
           Home
         </nuxt-link>
 
-        <nuxt-link class="navbar-item" to="/contact">
+        <a class="navbar-item" v-scroll-to="'#contact'">
           Contact
-        </nuxt-link>
+        </a>
       </div>
-
-      <div class="navbar-end">
-        <a href="https://github.com/tetsuzawa" class="navbar-item">
-            <span class="icon">
-              <i class="fab fa-github-square fa-2x"></i>
-            </span>
-        </a>
-        <a href="https://twitter.com/tetsuzawa_el" class="navbar-item">
-            <span class="icon">
-              <i class="fab fa-twitter-square fa-2x"></i>
-            </span>
-        </a>
-        <a href="https://www.linkedin.com/in/tetsu-takizawa" class="navbar-item">
-            <span class="icon">
-              <i class="fab fa-linkedin fa-2x"></i>
-            </span>
-        </a>
-
 
         <div class="navbar-item has-dropdown is-right is-hoverable">
           <a class="navbar-link">
