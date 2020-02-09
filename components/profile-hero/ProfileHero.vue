@@ -35,7 +35,7 @@
                     <span class="icon">
                        <i class="far fa-address-card fa-lg"></i>
                     </span>
-                    <span>{{ $t('home.home.contact_me') }}</span>
+                    <span>{{ $t('home.profile_hero.contact_me') }}</span>
                   </button>
                 </div>
               </div>
