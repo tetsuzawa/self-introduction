@@ -34,23 +34,21 @@
         </a>
       </div>
 
-        <div class="navbar-item has-dropdown is-right is-hoverable">
-          <a class="navbar-link">
-            {{ currentLocale.name }}
-          </a>
+      <div class="navbar-item has-dropdown is-right is-hoverable">
+        <a class="navbar-link">
+          {{ currentLocale.name }}
+        </a>
 
-          <div class="navbar-dropdown">
-            <nuxt-link
-              v-for="locale in availableLocales"
-              :key="locale.code"
-              :to="switchLocalePath(locale.code)"
-              class="navbar-item">{{ locale.name }}
-            </nuxt-link>
-          </div>
+        <div class="navbar-dropdown">
+          <nuxt-link
+            v-for="locale in availableLocales"
+            :key="locale.code"
+            :to="switchLocalePath(locale.code)"
+            class="navbar-item">{{ locale.name }}
+          </nuxt-link>
         </div>
       </div>
     </div>
-
   </nav>
 </template>
 
