@@ -15,18 +15,20 @@
           <div class="columns is-centered is-vcentered is-height-100">
             <div class="column is-narrow personal-text content is-medium">
               <h3 class="has-text-shadow">{{ $t('home.skills.title') }}</h3>
+<!--              <h4>{{ $t('home.skills.lang_title') }}</h4>-->
               <div class="tags">
-                <span class="tag is-primary is-medium">Go</span>
-                <span class="tag is-primary is-medium">Python</span>
-                <span class="tag is-primary is-medium">Javascript (ES6)</span>
-                <span class="tag is-primary is-medium">Vue.js / Nuxt.js</span>
-                <span class="tag is-primary is-small">C</span>
-                <span class="tag is-primary is-small">Unity C#</span>
-                <span class="tag is-primary is-small">HTML5 / CSS3</span>
-                <span class="tag is-primary is-small">Shell Script</span>
-                <span class="tag is-primary is-small">Google Apps Script</span>
+                <span class="tag is-info is-medium">Go</span>
+                <span class="tag is-info is-medium">Python</span>
+                <span class="tag is-info is-medium">Javascript (ES6)</span>
+                <span class="tag is-info is-medium">Vue.js / Nuxt.js</span>
+                <span class="tag is-info is-small">C</span>
+                <span class="tag is-info is-small">Unity C#</span>
+                <span class="tag is-info is-small">HTML5 / CSS3</span>
+                <span class="tag is-info is-small">Shell Script</span>
+<!--                <span class="tag is-primary is-small">Google Apps Script</span>-->
               </div>
 
+<!--              <h4>{{ $t('home.skills.other_title') }}</h4>-->
               <div class="tags">
                 <span class="tag is-info is-medium">{{ $t('home.skills.web_development') }}</span>
                 <span class="tag is-info is-medium">Git / GitHub</span>
