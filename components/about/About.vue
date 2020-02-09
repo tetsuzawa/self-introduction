@@ -104,9 +104,7 @@
             <tr class="about-row">
               <td>
                 <div class="about-item">
-                    <span class="icon qiita-icon">
-                      Q
-                    </span>
+                    <span class="icon qiita-icon">Q</span>
                   Qiita
                 </div>
               </td>
@@ -120,9 +118,7 @@
             <tr class="about-row">
               <td>
                 <div class="about-item">
-                    <span class="icon wantedly-icon">
-                      W
-                    </span>
+                    <span class="icon wantedly-icon">W</span>
                   Wantedly
                 </div>
               </td>

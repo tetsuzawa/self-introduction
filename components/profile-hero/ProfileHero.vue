@@ -24,7 +24,7 @@
                 <div class="has-padding-2x has-text-centered">
                   <button class="button is-rainbow is-rounded" v-scroll-to="'#contact'">
                     <span class="icon">
-                       <i class="far fa-envelope fa-lg"></i>
+                       <i class="far fa-envelope"></i>
                     </span>
                     <span>{{ $t('home.profile_hero.contact_me') }}</span>
                   </button>
@@ -90,16 +90,6 @@
   .mockup {
     width: 100%;
   }
-
-  /*.front-mockup {*/
-  /*  width: 125%;*/
-  /*  top: -12%;*/
-  /*  left: -3%;*/
-  /*}*/
-
-  /*.back-mockup {*/
-  /*  left: -10%; */
-  /*}*/
 
   .typed-element {
     display: block !important;
