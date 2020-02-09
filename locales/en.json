@@ -8,8 +8,10 @@
     "about": {
       "title": "About",
       "name_item": "Name",
-      "primary_name": "Tetsu Takizawa",
-      "secondary_name": "瀧澤 哲",
+      "name": {
+        "primary": "Tetsu Takizawa",
+        "secondary": "瀧澤 哲"
+      },
       "education_item": "Education",
       "education": "Department of Electrical and Electronic Engineering, National Institute of Technology, Tomakomai College, Hokkaido, Japan",
       "certification_name": "Certification",

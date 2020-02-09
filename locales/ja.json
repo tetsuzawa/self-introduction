@@ -8,8 +8,10 @@
     "about": {
       "title": "About",
       "name_item": "Name",
-      "primary_name": "瀧澤 哲",
-      "secondary_name": "Tetsu Takizawa",
+      "name": {
+        "primary": "瀧澤 哲",
+        "secondary": "Tetsu Takizawa"
+      },
       "education_item": "Education",
       "education": "苫小牧工業高等専門学校 電気電子工学科",
       "certification_name": "Certification",
