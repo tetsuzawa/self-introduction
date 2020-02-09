@@ -50,6 +50,9 @@
     },
     "posts": {
       "title": "Posts"
+    },
+    "contact": {
+      "title": "Contact me"
     }
   }
 }
