@@ -14,24 +14,16 @@
             <div class="columns is-centered is-mobile">
               <div class="column" style="max-width: 450px">
 
-                <!--                <vue-typed-js-->
-                <!--                  :key="locale"-->
-                <!--                  :strings="helloSubjects"-->
-                <!--                  :loop="true"-->
-                <!--                  :typeSpeed="9"-->
-                <!--                  :backSpeed="9"-->
-                <!--                  :backDelay="2000"-->
-                <!--                >-->
                 <h1 class="is-size-3-mobile is-size-1 has-text-weight-bold"
                     v-html="$t('home.profile_hero.name')">
                 </h1>
-                <!--                </vue-typed-js>-->
 
                 <p class="is-size-4 padding-top-1x"
                    v-html="$t('home.profile_hero.biography')">
                 </p>
                 <div class="has-padding-2x">
-                  <button class="button is-rainbow is-rounded" v-scroll-to="'#beta-signup'">
+                  <button class="button is-rainbow is-rounded" v-scroll-to="'#beta-signup'"
+                          onclick="location.href='https://www.wantedly.com/users/92008116'">
                     <span class="icon">
                        <i class="far fa-address-card fa-lg"></i>
                     </span>
@@ -112,6 +104,10 @@
 
   .typed-element {
     display: block !important;
+  }
+
+  .contact-link {
+    text-decoration: none;
   }
 
 </style>
