@@ -21,11 +21,10 @@
                 <p class="is-size-4 padding-top-1x"
                    v-html="$t('home.profile_hero.biography')">
                 </p>
-                <div class="has-padding-2x">
-                  <button class="button is-rainbow is-rounded" v-scroll-to="'#beta-signup'"
-                          onclick="location.href='https://www.wantedly.com/users/92008116'">
+                <div class="has-padding-2x has-text-centered">
+                  <button class="button is-rainbow is-rounded" v-scroll-to="'#contact'">
                     <span class="icon">
-                       <i class="far fa-address-card fa-lg"></i>
+                       <i class="far fa-envelope fa-lg"></i>
                     </span>
                     <span>{{ $t('home.profile_hero.contact_me') }}</span>
                   </button>
