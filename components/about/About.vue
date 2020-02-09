@@ -101,7 +101,7 @@
           <div class="columns is-centered is-vcentered is-height-100 is-mobile">
             <div class="column is-narrow">
               <span class="icon">
-                <i class="far fa-address-card fa-lg"></i>
+                <i class="far fa-address-card section-icon"></i>
               </span>
             </div>
           </div>
@@ -126,6 +126,10 @@
   .about-row {
     margin: 0 10px;
     padding: 0 10px;
+  }
+
+  .section-icon {
+    font-size: 200px;
   }
 </style>
 
