@@ -62,6 +62,8 @@ awsの[独自ドメインを使用して静的ウェブサイトをセットア�
 	- `http://<BACKET_NAME>.s3-website.<REGION>.amazonaws.com/<FILENAME>` でアクセスできないことを確認する
 
 6. [公式ドキュメント](https://ja.nuxtjs.org/faq/deployment-aws-s3-cloudfront/)に従い、gulpを導入してデプロイ
+	- 公式ドキュメントは間違っている部分がある。
+	- https://qiita.com/GussieTech/items/3ae77dbcb1e79222a9bc を参考に環境変数とheaderの部分を修正する必要がある
 
 
 
