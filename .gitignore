@@ -91,3 +91,6 @@ sw.*
 
 # Deployment secret
 deploy.sh
+
+# Deployment useless files
+.awspublish-tetsuzawa.com

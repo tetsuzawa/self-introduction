@@ -20,7 +20,7 @@ const config = {
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
 
   // 任意
-  deleteOldVersions: false, // PRODUCTION で使用しない
+  deleteOldVersions: true, // PRODUCTION で使用しない
   distribution: process.env.AWS_CLOUDFRONT, // CloudFront distribution ID
   region: process.env.AWS_DEFAULT_REGION,
   headers: {'x-amz-acl': 'private'},
