@@ -11,17 +11,20 @@ const config = {
   params: {
     Bucket: process.env.AWS_BUCKET_NAME
   },
-  credentials: {
-    accessKeyId: process.env.AWS_ACCESS_KEY_ID,
-    secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
-    signatureVersion: 'v3'
-  },
+  // credentials: {
+  //   accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  //   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
+  //   signatureVersion: 'v3'
+  // },
+  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
 
   // 任意
   deleteOldVersions: false, // PRODUCTION で使用しない
   distribution: process.env.AWS_CLOUDFRONT, // CloudFront distribution ID
   region: process.env.AWS_DEFAULT_REGION,
-  headers: { /* 'Cache-Control': 'max-age=315360000, no-transform, public', */},
+  headers: {'x-amz-acl': 'private'},
+  // headers: { /* 'Cache-Control': 'max-age=315360000, no-transform, public', */},
 
   // 適切なデフォルト値 - これらのファイル及びディレクトリは gitignore されている
   distDir: 'dist',
