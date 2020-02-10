@@ -22,5 +22,10 @@
     "sass-loader": "^8.0.2",
     "vue-scrollto": "^2.17.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "concurrent-transform": "^1.0.0",
+    "gulp": "^4.0.2",
+    "gulp-awspublish": "^4.1.1",
+    "gulp-cloudfront-invalidate-aws-publish": "^1.0.0"
+  }
 }
