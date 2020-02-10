@@ -6,6 +6,7 @@
     <skills/>
     <experiences/>
     <posts :postlist="postlist"/>
+    <contact/>
 
   </section>
 </template>
@@ -16,6 +17,7 @@
     import Skills from "../components/skills/Skills";
     import Experiences from "../components/experiences/Experiences";
     import Posts from "../components/posts/Posts";
+    import Contact from "../components/contact/Contact";
 
     export default {
         name: 'HomePage',
@@ -24,7 +26,8 @@
             About,
             Skills,
             Experiences,
-            Posts
+            Posts,
+            Contact
         },
 
         // props for posts

@@ -1,6 +1,6 @@
 export default {
-  // mode: 'universal',
-  mode: 'spa',
+  mode: 'universal',
+  // mode: 'spa',
   /*
   ** Headers of the page
   */
@@ -31,7 +31,9 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [],
+  plugins: [
+    '~/plugins/vue-scrollto'
+  ],
   /*
   ** Nuxt.js dev-modules
   */

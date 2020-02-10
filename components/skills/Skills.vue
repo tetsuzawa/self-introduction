@@ -2,12 +2,10 @@
   <section class="section">
     <div class="container">
       <div class="columns has-reverse-row-order-mobile">
-        <div class="column is-6">
-          <div class="column padding-top-2x-mobile">
-            <div class="columns is-centered is-vcentered is-height-100 is-mobile">
-              <div class="column is-10">
-                <personal-preview/>
-              </div>
+        <div class="column is-6 is-centered is-vcentered section-icon-parent">
+          <div class="column padding-top-2x-mobile has-text-centered section-icon-child">
+            <div class="icon">
+              <i class="fas fa-toolbox section-icon"></i>
             </div>
           </div>
         </div>
@@ -16,15 +14,14 @@
             <div class="column is-narrow personal-text content is-medium">
               <h3 class="has-text-shadow">{{ $t('home.skills.title') }}</h3>
               <div class="tags">
-                <span class="tag is-primary is-medium">Go</span>
-                <span class="tag is-primary is-medium">Python</span>
-                <span class="tag is-primary is-medium">Javascript (ES6)</span>
-                <span class="tag is-primary is-medium">Vue.js / Nuxt.js</span>
-                <span class="tag is-primary is-small">C</span>
-                <span class="tag is-primary is-small">Unity C#</span>
-                <span class="tag is-primary is-small">HTML5 / CSS3</span>
-                <span class="tag is-primary is-small">Shell Script</span>
-                <span class="tag is-primary is-small">Google Apps Script</span>
+                <span class="tag is-info is-medium">Go</span>
+                <span class="tag is-info is-medium">Python</span>
+                <span class="tag is-info is-medium">Javascript (ES6)</span>
+                <span class="tag is-info is-medium">Vue.js / Nuxt.js</span>
+                <span class="tag is-info is-small">C</span>
+                <span class="tag is-info is-small">Unity C#</span>
+                <span class="tag is-info is-small">HTML5 / CSS3</span>
+                <span class="tag is-info is-small">Shell Script</span>
               </div>
 
               <div class="tags">
@@ -56,16 +53,25 @@
       max-width: 400px;
     }
   }
+
+  .section-icon {
+    font-size: 200px;
+  }
+
+  .section-icon-parent {
+    position: relative;
+
+    .section-icon-child {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+    }
+  }
 </style>
 
 <script>
 
-    import PersonalPreview from './components/PersonalPreview';
-
     export default {
-        components: {
-            PersonalPreview
-        },
         name: 'skills'
     }
 </script>

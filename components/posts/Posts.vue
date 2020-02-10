@@ -52,7 +52,7 @@
         name: "posts",
         props: {
             postlist: {
-                type: Object,
+                type: Array,
                 default: null,
                 required: false,
             }
