@@ -40,6 +40,7 @@ module "cloudfront" {
 module "static_site" {
   //  source = "github.com/tetsuzawa/terraform-environments//modules/aws/static_site"
   source = "./modules/aws/static_site"
+  bucket_name = local.bucket_name
   sub_domain_name = local.sub_domain_name
   zone_id = aws_route53_zone.site_zone.zone_id
   cloudfront_domain_name = module.cloudfront.domain_name
