@@ -3,10 +3,10 @@ resource "aws_s3_bucket" "static_site" {
   force_destroy = true
 }
 
-resource "aws_s3_bucket" "static_site_access_logs" {
-  bucket        = "${var.bucket_name}-logs"
-  force_destroy = true
-}
+//resource "aws_s3_bucket" "static_site_access_logs" {
+//  bucket        = "logs${var.bucket_name}"
+//  force_destroy = true
+//}
 
 data "aws_iam_policy_document" "static_site_s3_policy" {
   statement {
@@ -25,19 +25,19 @@ resource "aws_s3_bucket_policy" "static_site" {
   policy = data.aws_iam_policy_document.static_site_s3_policy.json
 }
 
-data "aws_iam_policy_document" "static_site_access_logs" {
-  statement {
-    actions   = ["s3:PutObject"]
-    resources = ["${aws_s3_bucket.static_site_access_logs.arn}/*"]
-
-    principals {
-      type        = "AWS"
-      identifiers = [var.cloudfront_iam_arn]
-    }
-  }
-}
-
-resource "aws_s3_bucket_policy" "static_site_access_logs" {
-  bucket = aws_s3_bucket.static_site_access_logs.id
-  policy = data.aws_iam_policy_document.static_site_access_logs.json
-}
+//data "aws_iam_policy_document" "static_site_access_logs" {
+//  statement {
+//    actions   = ["s3:PutObject"]
+//    resources = ["${aws_s3_bucket.static_site_access_logs.arn}/*"]
+//
+//    principals {
+//      type        = "AWS"
+//      identifiers = [var.cloudfront_iam_arn]
+//    }
+//  }
+//}
+//
+//resource "aws_s3_bucket_policy" "static_site_access_logs" {
+//  bucket = aws_s3_bucket.static_site_access_logs.id
+//  policy = data.aws_iam_policy_document.static_site_access_logs.json
+//}
