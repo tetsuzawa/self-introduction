@@ -23,8 +23,7 @@ data "aws_iam_policy_document" "static_site_s3_policy" {
 
     principals {
       type = "AWS"
-      identifiers = [
-        var.cloudfront_iam_arn]
+      identifiers = [var.cloudfront_iam_arn]
     }
   }
 }
