@@ -33,12 +33,12 @@
   - S3
   - ACM
   
-### クラウドアーキテクチャ
+## クラウドアーキテクチャ
 
 ![cloud architecture](https://user-images.githubusercontent.com/38237246/74893278-56557c00-53cf-11ea-9841-1d48d08f0d1c.png)
 
   
-### スクリーンショット
+## スクリーンショット
 
 ![screen shot](https://user-images.githubusercontent.com/38237246/74893705-5a35ce00-53d0-11ea-84d7-17356aaca4a2.png)
 
