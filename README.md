@@ -1,50 +1,11 @@
-# self-introduction
+# STATIC
 
-## 概要
+**This directory is not required, you can delete it if you don't want to use it.**
 
-プロフィールサイトです。
+This directory contains your static files.
+Each file inside this directory is mapped to `/`.
+Thus you'd want to delete this README.md before deploying to production.
 
-基本的なフロントエンド、AWS・Terraformなどのインフラ、GitHub Actionsを利用したCI/CD環境の構築を習得するために制作しました。
+Example: `/static/robots.txt` is mapped as `/robots.txt`.
 
-## リンク
-
-[tetsuzawa.com](https://tetsuzawa.com)  でアクセスできます。
-
-## 使用技術
-
-### フロントエンド
-
-- Nuxt 2.0.0
-- @nuxtjs/axios 5.3.6
-- @nuxtjs/bulma 1.2.1
-- nuxt-i18n 6.5.0
-- sass 1.25.0
-- animate.css 3.7.2
-- bulma-timeline 3.0.4
-- vue-scrollto 2.17.1
-
-### インフラストラクチャ
-
-- Terraform
-- GitHub Actions
-- AWS
-  - Route53
-  - CloudFront
-  - S3
-  - ACM
-  
-## クラウドアーキテクチャ
-
-![cloud architecture](https://user-images.githubusercontent.com/38237246/74893278-56557c00-53cf-11ea-9841-1d48d08f0d1c.png)
-
-  
-## スクリーンショット
-
-![screen shot](https://user-images.githubusercontent.com/38237246/74893705-5a35ce00-53d0-11ea-84d7-17356aaca4a2.png)
-
-  
-
-
-
-
-
+More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/assets#static).
